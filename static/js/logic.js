@@ -17,7 +17,7 @@ function makeMap() {
             // make second call for tetonic plates
             $.ajax({
                 type: "GET",
-                url: "/static/data/tetonic_data.json",
+                url: "static/data/tetonic_data.json",
                 success: function(tectonicPlates) {
                     // build map with both datasets
                     buildMap(data, tectonicPlates);
